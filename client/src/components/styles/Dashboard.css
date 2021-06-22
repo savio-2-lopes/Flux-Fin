@@ -1,0 +1,367 @@
+/* Corpo */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.navbar a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .landing h1 {
+    font-size: 3.5rem;
+  }
+}
+
+.dashboard-navbar .navbar {
+  background-color: var(--green-50);
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 19.5rem;
+}
+
+.dashboard h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.dashboard h2 {
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.dashboard .dashboard-loading {
+  margin: 40px;
+}
+
+.dashboard .boards {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard .board-card {
+  padding: 0;
+  border: none;
+  width: 180px;
+  height: 130px;
+  padding: 40px 50px 20px 20px;
+  margin: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--green-50);
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 6px;
+  border-color: var(--green-100);
+  font-size: 1rem;  
+  background-color: var(--green-25);
+  text-align: center;
+}
+
+.dashboard .board-card:hover {
+  background-color: var(--green-10);
+}
+
+.dashboard .create-board-card {
+  padding: 0;
+  border: none;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 6px;
+  color: var(--green-100);
+  font-size: 1rem;
+  background-color: var(--green-25);
+  cursor: pointer;
+}
+
+.dashboard .create-board-card:hover {
+  background-color: var(--green-10);
+}
+
+.board-navbar {
+  background-size: cover;
+  height: 100vh;
+}
+
+.board-navbar .navbar {
+  background-color: var(--gray-200);
+}
+
+.board-loading {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.board .board-top {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board .board-top .board-top-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left:5rem
+}
+
+@media (max-width: 960px) {
+  .board .board-top .board-top-left {
+    flex-direction: column;
+  }
+}
+
+.board .board-top .board-top-left .board-title {
+  cursor: pointer;
+  color: var(--green-50);
+  padding: 5px 0 0 5px;
+  max-width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.board .board-top .board-top-left .board-title-form {
+  background-color: var(--gray-50);
+}
+
+.board .board-top .board-top-left .board-members-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+@media (max-width: 960px) {
+  .board .board-top .board-top-left .board-members-wrapper {
+    margin: 20px 20px 20px 0;
+  }
+}
+
+.board .board-top .board-top-left .board-members-wrapper .board-members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board .board-top .board-top-left .invite {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board .board-top .board-top-left .invite .search-member {
+  width: 250px;
+  margin-right: 10px;
+  height: 2.5rem;
+}
+
+.board .avatar {
+  margin-right: 2px;
+  color: var(--green-100);
+  cursor: default;  
+  background-color: var(--gray-05);
+}
+
+.board .avatar:hover {
+  background-color: var(--gray-10);
+}
+
+.board .create-list-button {
+  margin-top: 10px;
+  min-width: 200px;
+}
+
+.board .create-list-form {
+  min-width: 280px;
+  padding: 0 10px 10px;
+  margin-top: 10px;
+  height: fit-content;
+  background-color: var(--gray-05);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board .archived-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.board .tasks {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-left: 5rem;
+}
+
+@media (min-height: 600px) and (min-width: 1000px) {
+  .board .tasks {
+    min-height: 83vh;
+  }
+}
+
+@media (min-height: 960px) {
+  .board .tasks {
+    min-height: 88vh;
+  }
+}
+
+.board .tasks .list-wrapper {
+  background-color: var(--gray-05);
+  border-radius: 5px;
+  min-width: 280px;
+  max-width: 280px;
+  height: fit-content;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.board .tasks .list-wrapper .list-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board .tasks .list-wrapper .list-top .list-title {
+  cursor: pointer;
+  padding: 5px 0 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.board .tasks .list-wrapper .create-card-button {
+  margin-top: 1rem;
+}
+
+.board .tasks .list-wrapper .create-card-form {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board .tasks .list-wrapper .card-edit-content {
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+.board .tasks .list-wrapper .card-actions {
+  margin-bottom: 5px;
+}
+
+.board .tasks .list-wrapper .not-adding-card {
+  max-height: 64vh;
+}
+
+@media (min-height: 960px) {
+  .board .tasks .list-wrapper .not-adding-card {
+    max-height: 75vh;
+  }
+}
+
+.board .tasks .list-wrapper .adding-card {
+  max-height: 69vh;
+}
+
+@media (min-height: 960px) {
+  .board .tasks .list-wrapper .adding-card {
+    max-height: 80vh;
+  }
+}
+
+.board .tasks .list-wrapper .list {
+  min-height: 1px;
+  overflow-y: auto;
+}
+
+.board .tasks .list-wrapper .list .cards {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2px;
+}
+
+.board .tasks .list-wrapper .list .cards .card {
+  margin: 5px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.board .tasks .list-wrapper .list .cards .card .card-label {
+  height: 9px;
+  width: 45px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.board .tasks .list-wrapper .list .cards .card .description-indicator {
+  margin: 3px 5px -5px -3px;
+}
+
+.board .tasks .list-wrapper .list .cards .card .checklist-indicator {
+  display: flex;
+  align-items: center;
+  padding: 1px 5px 0 4px;
+  height: 25px;
+  margin: auto;
+}
+
+.board .tasks .list-wrapper .list .cards .card .checklist-indicator .checklist-indicator-icon {
+  margin-right: 2px;
+}
+
+.board .tasks .list-wrapper .list .cards .card .completed-checklist-indicator {
+  border-radius: 5px;
+  color: var(--gray-50);
+}
+
+.board .tasks .list-wrapper .list .cards .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 3px;
+  margin-bottom: -5px;
+}
+
+.board .tasks .list-wrapper .list .cards .card .card-bottom .card-bottom-left {
+  display: flex;
+}
+
+.board .tasks .list-wrapper .list .cards .card .card-bottom .card-member-avatars {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board .tasks .list-wrapper .list .cards .card .card-bottom .card-member-avatars .avatar {
+  width: 30px;
+  height: 30px;
+  font-size: 0.8rem;
+  background-color: var(--gray-10);
+}
+
+.board .tasks .list-wrapper .list .cards .card .card-bottom .card-member-avatars .avatar:hover {
+  background-color: var(--gray-15);
+}
+
+.board .tasks .list-wrapper .list .cards .mouse-over {
+  background-color: var(--gray-50);
+}

@@ -1,0 +1,105 @@
+/* Corpo */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  outline: 0;
+  margin: 0;
+}
+
+/* Incio das cores globais do projeto */
+
+:root {
+  --white: #fff;
+  --gray-05: #eee;
+  --gray-10: #ddd;
+  --gray-15: #ccc;
+  --gray-50: #f7f8fa;
+  --gray-100: #dcdce6;
+  --gray-150: #ccc;
+  --gray-200: #41414d;
+  --gray-300: #333;
+  --green-10: #ecf4f3; 
+  --green-25: #e0edeb;
+  --green-50: #82c595;
+  --green-100: #8eca9f;
+}
+/* Final das cores globais do projeto */
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font: 400 14px Inter, sans-serif;
+}
+
+input,
+button,
+textarea {
+  font: 400 18px Inter, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+form input {
+  border: 1px solid var(--gray-100);
+  color: var(--gray-300);
+  border-radius: 8px;
+  padding: 0 24px;
+  height: 60px;
+  width: 100%;
+}
+
+form input:hover {
+  border: 1px solid var(--gray-100);
+}
+
+form textarea {
+  border: 1px solid var(--gray-100);
+  color: var(--gray-300);
+  border-radius: 8px;
+  padding: 16px 24px;
+  min-height: 140px;
+  line-height: 24px;
+  resize: vertical;
+  width: 100%;
+}
+
+/* Inicio do Botão */
+.button {
+  background: var(--green-50);
+  transition: filter 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 700;
+  margin-top: 16px;
+  font-size: 18px;
+  height: 60px;
+  width: 100%;
+  border: 0;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+/* Final do Botão */
+
+a {
+  text-decoration: none;
+}

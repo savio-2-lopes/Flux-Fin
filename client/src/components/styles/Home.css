@@ -1,0 +1,231 @@
+/* Corpo */
+  
+body {
+  background-color: var(--green-100);
+}
+
+.form {
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 3.5rem;
+  display: flex;
+  height: 90%;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+
+}
+
+.form h1 {
+  width: 80%;
+  font-size: 1rem;
+  text-align: start;
+  margin-bottom: 1rem;
+  color: var(--green-25);
+}
+
+.form-container {
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  margin: center;
+  height: 650px;
+  display: grid;
+  width: 78rem;
+}
+
+/* Inputs dentro do formulário */
+.form-input {
+  color: var(--gray-150);
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  border-width: 2px;
+  font-weight: 600;
+  outline: none;
+  height: 65px;
+  width: 100%;
+}
+
+/* Cores e fontes do placeholders dentro dos inputs */
+.form-input::placeholder {
+  font-family: "Inter" sans-serif;
+  color: var(--gray-150);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Blocos dentro do formulário */
+.form-inputs {
+  border-radius: 2rem;
+  color: var(--white);
+  width: 80%;
+}
+
+.form-inputs p {
+  color: var(--red-100);
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Conteúdo do Formulário para esquerda  */
+.form-content-left {
+  border-radius: 1.5rem 0 0 1.5rem;
+  background-color: var(--green-25);
+  position: relative;
+  margin-top: 2rem;
+}
+
+/* Conteúdo do Formulário para direita  */
+.form-content-right {
+  border-radius: 0 1.5rem 1.5rem 0;
+  background: var(--white);
+  position: relative;
+  margin-top: 2rem;
+}
+
+/* Imagem contida dentro do formulário  */
+.form-img {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 55%;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+}
+
+/* Botão do google */
+
+.login-google-button {
+  width: 27rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+/* Hover no botão do Google */
+
+.login-google-button:hover {
+  transition: all 0.5s ease-out;
+  opacity: 0.85;
+}
+
+/* Separador de login */
+
+.separator {
+  align-items: center;
+  margin-bottom: 5px;
+  color: var(--green-50);
+}  
+  
+.separator::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  color: var(--green-50);
+  margin-right: 20px;
+}
+
+.separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  color: var(--green-50);
+  margin-left: 20px;
+}
+
+/* Botões presentes no formulário */
+
+.form-input-btn {
+  background: var(--green-50);
+  border-radius: 2rem;
+  color: var(--white);
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  height: 60px;
+  width: 80%;
+}
+
+/* Hover ao clicar no botão */
+
+.form-input-btn:hover {
+  background: var(--green-100);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.form-column-rigth {
+  margin-left: 11.5rem;
+}
+
+.form-input-login {
+  font-size: 0.8rem;
+  width: 80%;
+}
+
+.form-column-left {
+  text-align: right;
+}
+
+.form-column-left.mt-2 {
+  margin-bottom: 1.2rem;
+}
+
+/* Spans modificados do formulário */
+
+.form-span {
+  font-family: "Inter", sans-serif;
+  color: var(--green-50);
+  margin-bottom: 0.7rem;
+  font-size: 0.875rem;
+  font-weight: medium;
+  margin-top: 1.2rem;
+}
+
+/* Link de redirecionamento */
+
+.form-input-login a.link {
+  font-family: "Inter", sans-serif;
+  color: var(--green-50);
+  text-decoration: none;
+  font-weight: medium;
+}
+
+/* Clicar no link */
+
+.form-input-login a.link:hover {
+  color: var(--green-100);
+}
+
+/* Espaçamentos modificados do botão dentro do formulário */
+
+.form-input-btn.mt-3 {
+  margin-top: -0.1rem;
+}
+
+.form-inputs.mt-4 {
+  margin-bottom: 0rem;
+  margin-top: 0.2rem;
+}
+
+.form-inputs.mt-3 {
+  margin-bottom: 0.1rem;
+}
+
+/* Esconder texto (acessibilidade) */
+
+.hidden {
+  display: none;
+}
+
+/* Logo  */
+
+.logo-content {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+  display: block;
+}
