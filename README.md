@@ -96,7 +96,7 @@ $ SECRET=<ADD_SECRET_KEY>
 $ yarn
 
 # Rode o comando
-$ yarn start
+$ yarn dev
 
 ```
 
