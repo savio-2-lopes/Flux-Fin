@@ -60,6 +60,9 @@ $ git clone https://github.com/savio-2-lopes/Flux-Fin.git
 # Entre na pasta
 $ cd Flux-Fin/client
 
+# Crie um arquivo denominado .env.local e adicione a chave da api google
+$ REACT_APP_SECRET_GOOGLE_CLIENT=<ADD_SECRET_KEY>
+
 # Instale as depedências
 $ yarn
 
@@ -83,14 +86,11 @@ $ yarn start
 # Primeiro inicie a conexão com o MongoDB
 $ sudo systemctl start mongod
 
-# Clone esse repositório
-$ git clone https://github.com/savio-2-lopes/Flux-Fin.git
-
-# Entre na pasta
+# Com o repositório clonado entre na pasta
 $ cd Flux-Fin/server
 
 # Crie um arquivo .env e adicione dentro dele uma senha
-$ SECRET=ADD_SECRET_KEY
+$ SECRET=<ADD_SECRET_KEY>
 
 # Instale as depedências
 $ yarn
