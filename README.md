@@ -86,6 +86,9 @@ $ yarn start
 # Primeiro inicie a conexão com o MongoDB
 $ sudo systemctl start mongod
 
+# Caso seja no Windows, [rode como admin o comando](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+$ "C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
+
 # Com o repositório clonado entre na pasta
 $ cd Flux-Fin/server
 
