@@ -78,7 +78,9 @@ const ChecklistItem = ({ item, card }) => {
                 variant='contained'
                 color='primary'
               >
-                Salvar
+                <span style={{ color: "white" }}>
+                  Salvar
+                </span>
               </Button>
             </ThemeProvider>
 

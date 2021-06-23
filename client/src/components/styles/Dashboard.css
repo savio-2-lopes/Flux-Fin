@@ -144,7 +144,7 @@
 }
 
 .board .board-top .board-top-left .board-title-form {
-  background-color: var(--gray-50);
+  background-color: var(--green-50);
 }
 
 .board .board-top .board-top-left .board-members-wrapper {
@@ -246,6 +246,7 @@
 
 .board .tasks .list-wrapper .list-top .list-title {
   cursor: pointer;
+  color: var(--green-50);
   padding: 5px 0 0 5px;
   white-space: nowrap;
   overflow: hidden;
