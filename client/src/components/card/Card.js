@@ -9,7 +9,6 @@ import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import { TextField, CardContent, Button, Avatar, Tooltip } from '@material-ui/core';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import SubjectIcon from '@material-ui/icons/Subject';
-import CloseIcon from '@material-ui/icons/Close';
 import EditIcon from '@material-ui/icons/Edit';
 import CardMUI from '@material-ui/core/Card';
 // Card e Kambam

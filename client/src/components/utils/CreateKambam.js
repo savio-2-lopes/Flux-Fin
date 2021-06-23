@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom';
 // Material UI
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { Modal, TextField, Button } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
 // Kambam e Modal
 import { addKambam } from '../../actions/kambam';
 import useStyles from '../../utils/modalStyles';
