@@ -107,7 +107,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   modalTop: {
-    display: 'flex'
+    display: 'flex',
   },
 
   modalSection: {

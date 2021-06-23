@@ -29,10 +29,8 @@ const CreateKambam = ({ history }) => {
   const body = (
     <div className={`${classStyles.paper} ${classStyles.createKambamModal}`}>
       <div className={classStyles.modalTop}>
-        <h3>Criar kambam</h3>
-        <Button onClick={() => setOpen(false)}>
-          <CloseIcon />
-        </Button>
+        <h3 style={{ color: "#82c595" }}>Criar kambam</h3>
+        <Button onClick={() => setOpen(false)}></Button>
       </div>
 
       <form onSubmit={(e) => onSubmit(e)}>

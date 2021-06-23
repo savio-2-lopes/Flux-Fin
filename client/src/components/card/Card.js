@@ -187,7 +187,6 @@ const Card = ({ cardId, task, index }) => {
                 setTitle(card.title);
               }}
             >
-              <CloseIcon />
             </Button>
           </div>
         </form>
